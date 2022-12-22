@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      let siswa = [
+        {
+          nama: "john",
+          age: "14",
+        },
+        {
+          nama: "doe",
+          age: "25",
+        },
+        {
+          nama: "paul",
+          age: "16",
+        },
+        {
+          nama: "alex",
+          age: "36",
+        },
+      ];
+
+      siswa.sort((a, b) => {
+        return b.age - a.age
+      })
+
+      for(
+        let 
+        i = 0;
+        i < siswa.length;
+        i++
+        ) {
+            document.querySelector("#demo").innerHTML += siswa[i].nama + ' ' + siswa[i].age + '<br>' + '<hr>'
+        }
+
+    </script>
+  </body>
+</html>
